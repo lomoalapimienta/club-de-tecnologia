@@ -1,0 +1,103 @@
+/* Fuente moderna desde Google Fonts */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f9f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Contenedor reutilizable */
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Encabezado llamativo */
+header {
+  background: linear-gradient(135deg, #2b2e4a, #1a1a40);
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+header .subtitle {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #c3c3ff;
+}
+
+/* Secciones principales */
+main {
+  padding: 2rem 0;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-left: 6px solid #1a1a40;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  border-radius: 5px;
+}
+
+.content-section {
+  margin-top: 2rem;
+}
+
+.content-section h2 {
+  color: #1a1a40;
+  font-weight: 600;
+  border-bottom: 2px solid #d1d1f0;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.content-section ul {
+  padding-left: 1.5rem;
+}
+
+.content-section li::before {
+  content: "•";
+  color: #6a5acd;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Footer simple */
+footer {
+  background: #eee;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 3rem;
+}
+
+/* Animaciones suaves */
+section, footer {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+section:nth-of-type(1) { animation-delay: 0.2s; }
+section:nth-of-type(2) { animation-delay: 0.4s; }
+section:nth-of-type(3) { animation-delay: 0.6s; }
+section:nth-of-type(4) { animation-delay: 0.8s; }
+footer { animation-delay: 1s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
